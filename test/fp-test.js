@@ -55,6 +55,4 @@ describe('FP Module', () => {
       expect(result).to.equal(10);
     });
   });
-
-
 });
