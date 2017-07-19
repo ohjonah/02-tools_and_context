@@ -1,5 +1,9 @@
 'use strict';
 
+module.exports = exports = {};
+
 const fp = require('./lib/fp.js');
 
-fp.map(process.argv, (u) => console.log(u.toUpperCase()));
+exports.upCase = arr => fp.map(arr, el => el.toUpperCase());
+
+console.log(exports.upCase(process.argv));
